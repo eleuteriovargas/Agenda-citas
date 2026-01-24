@@ -1,6 +1,5 @@
 HELP.md
 target/
-.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
 
@@ -22,6 +21,13 @@ target/
 *.iws
 *.iml
 *.ipr
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/shelf/
+.idea/dictionaries
+.idea/compiler.xml
+out/
+.idea/
 
 ### NetBeans ###
 /nbproject/private/
@@ -36,15 +42,6 @@ build/
 ### VS Code ###
 .vscode/
 
-# IntelliJ IDEA
-.idea/workspace.xml
-.idea/tasks.xml
-.idea/shelf/
-.idea/dictionaries
-.idea/compiler.xml
-out/
-
-
 # Sistema Operativo
 .DS_Store
 Thumbs.db
@@ -52,3 +49,6 @@ desktop.ini
 
 # Build y dependencias
 .gradle/
+
+# Temporales
+tmp/
