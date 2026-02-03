@@ -40,7 +40,7 @@ public class AppointmentEntity {
     private int durationMinutes;
 
     @Enumerated(EnumType.STRING)
-    @Column(name = "status", nullable = false, length = 20)
+    @Column(name = "status", nullable = false, length = 20, columnDefinition = "VARCHAR(20)")
     private AppointmentStatus status;
 
     @Column(name = "created_at", nullable = false, updatable = false, columnDefinition = "DATETIME(6)")
@@ -120,7 +120,7 @@ public class AppointmentEntity {
         }
     }
 
-    // ==================== Getters (sin setters públicos) ====================
+    // ==================== Getters ====================
 
     public UUID getId() {
         return id;
